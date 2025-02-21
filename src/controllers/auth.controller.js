@@ -32,7 +32,6 @@ export const signup = async (req, res) => {
                 id: newUser._id,
                 fullName: newUser.fullName,
                 email: newUser.email,
-                avatar: newUser.avatar,
             })
         } else {
             return res.status(400).json({ message: "Invaild User data" })
